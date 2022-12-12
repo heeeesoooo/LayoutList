@@ -5,7 +5,7 @@
 
 .basic01 h2 {
     font-size: 25px;
-    margin: 0 0 100px 0;
+    margin: 0 0 10px 0;
     /* box 안쪽의 구성요소(굴, 그림 : inline 속성을 가진 요소)를  */
     text-align: center;
 }
