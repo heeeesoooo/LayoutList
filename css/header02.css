@@ -1,32 +1,39 @@
-.Wrap {
-    min-width: 1900px;
-
+* {
+    outline: 1px solid tomato;
 }
 
-#header {}
+.Wrap {}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    line-height: 100px;
+
+}
 
 #header h1 {
-    text-align: center;
+    flex: 1;
+    font-size: 0;
+
 }
 
-#header .gnb {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+#header .link {
+    flex: 1;
+    /* text-align: right; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-/* 메인메뉴를 만들 때는 자식 선택자를 적극적으로 활용한다. */
+/* 
+#header>*:not(.gnb) {
+    color: tomato;
+} */
+
 #header .gnb>ul {
     display: flex;
-
-    line-height: 80px;
-    justify-content: center;
-    /* flex에서 좌우배치 시 사용 */
-}
-
-#header .gnb>ul>li>a {
-    display: block;
-    /* a가 박스가 되면 line-height를 상속함 */
-    padding: 0 30px;
+    gap: 60px;
 }
 
 .mainVisual {
@@ -50,7 +57,7 @@
     margin: 0 0 20px 0;
 }
 
-.mainVisual .slogan h2 p {
+.mainVisual .slogan p {
     color: #fff;
     font-size: 15px;
 

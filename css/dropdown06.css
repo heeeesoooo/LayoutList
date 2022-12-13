@@ -1,33 +1,93 @@
+body {
+    /* overflow: hidden; */
+}
+
 .Wrap {
     min-width: 1900px;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 200px;
+
+    line-height: 100px;
+    background: #eff;
 
 }
 
-#header {}
 
 #header h1 {
-    text-align: center;
+    font-size: 0;
 }
 
-#header .gnb {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-/* 메인메뉴를 만들 때는 자식 선택자를 적극적으로 활용한다. */
 #header .gnb>ul {
     display: flex;
 
-    line-height: 80px;
-    justify-content: center;
-    /* flex에서 좌우배치 시 사용 */
+
 }
 
+#header .gnb>ul>li {}
+
 #header .gnb>ul>li>a {
-    display: block;
-    /* a가 박스가 되면 line-height를 상속함 */
-    padding: 0 30px;
+    padding: 0 20px;
 }
+
+#header .gnb>ul>li a {
+    display: block;
+    text-align: center;
+}
+
+#header .gnb>ul>li .menu_wrap {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0;
+    line-height: 35px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+
+    display: none;
+
+}
+
+
+#header .gnb>ul>li:hover .menu_wrap {
+    display: block;
+}
+
+#header .gnb>ul>li .submenu {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mainVisual {
     position: relative;
@@ -50,7 +110,7 @@
     margin: 0 0 20px 0;
 }
 
-.mainVisual .slogan h2 p {
+.mainVisual .slogan p {
     color: #fff;
     font-size: 15px;
 

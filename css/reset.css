@@ -16,6 +16,7 @@
 
 *::before,
 *::after {
+
     box-sizing: border-box;
 }
 
@@ -41,7 +42,6 @@ a {
 
 img {
     vertical-align: middle;
-    /* 이미지가 박스를 넘지않게 하는것 */
     max-width: 100%;
 }
 

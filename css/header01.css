@@ -1,19 +1,20 @@
-/* * {
-    outline: 1px solid tomato;
-} */
+* {
+    outline: 1px solid #f00;
+}
 
 .Wrap {
     min-width: 1900px;
-    overflow: hidden;
+
 }
 
 #header {
     line-height: 100px;
-    border-top: 3px solid tomato;
+    border-top: 3px solid #f00;
 }
 
 #header .inner {
     display: flex;
+
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
@@ -21,7 +22,7 @@
 
 #header .gnb>ul {
     display: flex;
-    gap: 60px;
+    gap: 30px;
 }
 
 #header .gnb>ul a {
@@ -31,7 +32,7 @@
 .mainVisual {
     position: relative;
     height: 500px;
-    background: url(../img/main_visual01.jpg);
+    background: url(../img/main_visual01.jpg)no-repeat center center / cover;
 }
 
 .mainVisual .slogan {
@@ -39,6 +40,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .mainVisual .slogan h2 {
@@ -48,9 +50,10 @@
     margin: 0 0 20px 0;
 }
 
-.mainVisual .slogan p {
+.mainVisual .slogan h2 p {
     color: #fff;
     font-size: 15px;
+
 }
 
 .mainContent {

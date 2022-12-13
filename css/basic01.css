@@ -1,13 +1,14 @@
 .basic01 {
-    /* 상하 좌우 */
     padding: 100px 0;
+
 }
 
 .basic01 h2 {
     font-size: 25px;
     margin: 0 0 10px 0;
-    /* box 안쪽의 구성요소(굴, 그림 : inline 속성을 가진 요소)를  */
+    /* box 안쪽의 구성요소(글, 그림: inline속성을 가진 요소)를 box 가운데 오게 한다. */
     text-align: center;
+
 }
 
 .basic01 .title {
@@ -18,10 +19,12 @@
 
 .basic01 .inner {
     display: flex;
+    /* flex박스를 띄우는 방식. float과 grid는 사용 X */
     gap: 30px;
+    /* flex는 늘어나는 속성을 가지고 있다. */
     width: 1200px;
-    /* size가 있는 box를 가운데 오게 한다. margin 양쪽을 auto로 늘려준다 */
-    margin: 0 auto
+    /* size가 있는 box를 가운데 오게하는 margin 양쪽을 auto로 늘려준다 */
+    margin: 0 auto;
 }
 
 .basic01 .inner figure {
@@ -33,16 +36,16 @@
 }
 
 .basic02 {
-    /* 상하 좌우 */
     padding: 100px 0;
     background: #f9f9f9;
 }
 
 .basic02 h2 {
     font-size: 25px;
-    margin: 0 0 100px 0;
-    /* box 안쪽의 구성요소(굴, 그림 : inline 속성을 가진 요소)를  */
+    margin: 0 0 10px 0;
+    /* box 안쪽의 구성요소(글, 그림: inline속성을 가진 요소)를 box 가운데 오게 한다. */
     text-align: center;
+
 }
 
 .basic02 .title {
@@ -53,10 +56,12 @@
 
 .basic02 .inner {
     display: flex;
+    /* flex박스를 띄우는 방식. float과 grid는 사용 X */
     gap: 30px;
+    /* flex는 늘어나는 속성을 가지고 있다. */
     width: 1200px;
-    /* size가 있는 box를 가운데 오게 한다. margin 양쪽을 auto로 늘려준다 */
-    margin: 0 auto
+    /* size가 있는 box를 가운데 오게하는 margin 양쪽을 auto로 늘려준다 */
+    margin: 0 auto;
 }
 
 .basic02 .inner figure {
